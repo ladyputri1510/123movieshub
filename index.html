@@ -115,7 +115,7 @@
         }
 
         /* Hide elements by default for layers */
-        .layer-2, .layer-3 {
+        .layer-2, .layer-3, .layer-4 { /* Added .layer-4 */
             display: none;
         }
 
@@ -240,6 +240,7 @@
             </div>
             <nav class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
                 <div class="flex w-full sm:w-auto sm:space-x-6">
+                    <button id="nav-home-button" class="nav-button bg-gray-800 hover:bg-purple-600 rounded-md text-gray-100 font-medium w-full sm:w-auto text-sm md:text-base transition-all duration-200" data-lang-key="homeButton">Home</button>
                     <button id="nav-movies-button" class="nav-button bg-gray-800 hover:bg-blue-600 rounded-md text-gray-100 font-medium w-full sm:w-auto text-sm md:text-base transition-all duration-200" data-lang-key="moviesButton">Movies</button>
                     <button id="nav-tvseries-button" class="nav-button bg-gray-800 hover:bg-rose-600 rounded-md text-gray-100 font-medium w-full sm:w-auto text-sm md:text-base transition-all duration-200" data-lang-key="tvSeriesButton">TV Series</button>
                 </div>
@@ -472,6 +473,71 @@
             </div>
         </section>
 
+        <!-- Layer 4: SEO Description for 123movieshub -->
+        <section id="layer-4" class="layer-4 bg-gray-800 p-6 md:p-8 rounded-lg shadow-xl relative">
+            <button id="back-from-home-button" class="absolute top-4 left-4 bg-gray-700 hover:bg-gray-600 text-gray-200 p-2 rounded-full shadow-md transition-colors duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            </button>
+            <h2 class="text-4xl font-bold text-gray-100 mb-6 text-center" data-lang-key="homePageTitle">Welcome to 123movieshub!</h2>
+            <div id="home-content" class="text-gray-200 leading-relaxed text-justify">
+                <!-- Image for the home page -->
+                
+                <img src="https://live.staticflickr.com/65535/54678495606_a8bf34a734_b.jpg" alt="123movieshub Home Image" class="w-full rounded-lg shadow-md mb-8">
+                <p class="mb-4">Welcome to 123movieshub, your ultimate destination for an unparalleled streaming experience of movies and TV series, absolutely free and in full HD quality! In today's digital age, finding a platform that offers high-quality entertainment without the hassle of registration or hidden fees can be a challenge. 123movieshub emerges as a revolutionary solution, providing instant access to a vast library of content, from the latest blockbuster films to timeless classic TV series. We understand your need for easily accessible, fast, and of course, free entertainment. With a focus on user satisfaction, 123movieshub is designed to be your preferred online entertainment source.</p>
+
+                <h3 class="text-2xl font-bold text-gray-100 mb-4 mt-6">Why Choose 123movieshub? The Advantages That Set Us Apart</h3>
+                <p class="mb-4">Amidst a sea of streaming platforms, 123movieshub stands out with a range of advantages specifically designed to maximize your viewing experience. We don't just offer movies and TV series; we offer the freedom to enjoy entertainment anytime, anywhere, without limitations. Here are some reasons why millions of users choose 123movieshub as their primary entertainment portal:</p>
+                <ul class="list-disc list-inside mb-4 ml-4">
+                    <li class="mb-2"><strong>Extensive and Diverse Content Collection:</strong> Our library is a treasure trove for every movie and TV series enthusiast. From thrilling Hollywood action films, heartwarming Korean dramas, to colorful Bollywood movies and entertaining local TV series, 123movieshub has it all. We constantly update our collection daily, ensuring you always have access to the latest releases and popular titles across various genres such as adventure, comedy, crime, horror, fantasy, mystery, sci-fi, and thriller.</li>
+                    <li class="mb-2"><strong>Stunning Full HD Quality:</strong> We believe that visual quality is key to an immersive viewing experience. That's why 123movieshub is committed to providing content in full HD quality, including 720p, 1080p, and even 4K options for certain titles. Enjoy every detail, rich colors, and crystal-clear images that will make you feel like you're in your own private cinema.</li>
+                    <li class="mb-2"><strong>Completely Free, No Hidden Costs:</strong> Forget monthly subscriptions or hidden fees. 123movieshub is entirely free. We are dedicated to providing high-quality entertainment accessible to everyone, without burdening your wallet. This is our promise to you.</li>
+                    <li class="mb-2"><strong>Instant Access Without Registration:</strong> We value your privacy and time. With 123movieshub, you don't have to bother creating an account, filling out long forms, or providing personal information. Simply visit our site, choose the content you want to watch, and start streaming instantly. This is true convenience at your fingertips.</li>
+                    <li class="mb-2"><strong>Intuitive and User-Friendly Interface:</strong> Our site design is built with you in mind. Easy navigation, clear categories, and responsive search functionality ensure you can find your favorite movies or TV series in seconds. A seamless user experience is our top priority.</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold text-gray-100 mb-4 mt-6">Key Features of 123movieshub for the Best Viewing Experience</h3>
+                <p class="mb-4">In addition to our core advantages, 123movieshub is also equipped with various advanced features designed to elevate your streaming experience to the next level. We continuously innovate to ensure you get the most out of your leisure time:</p>
+                <ul class="list-disc list-inside mb-4 ml-4">
+                    <li class="mb-2"><strong>Consistent Daily Content Updates:</strong> The world of entertainment keeps moving, and so does 123movieshub. Our team works tirelessly to add the latest movies and TV series episodes every day. You'll never run out of options, from newly released blockbusters to the latest episodes of trending series.</li>
+                    <li class="mb-2"><strong>Comprehensive Multi-language Subtitle Support:</strong> Enjoy content from all over the world with full understanding. Most movies and TV series on 123movieshub come with subtitle options in various languages, including Indonesian, English, Spanish, and many more. This ensures that language barriers won't prevent you from enjoying your favorite stories.</li>
+                    <li class="mb-2"><strong>Smart Search and Advanced Filters:</strong> Looking for a specific movie or series? Our smart search feature allows you to find the right title quickly. You can also use advanced filters to sort content by genre, release year, rating, actor, or director, helping you discover hidden gems or classics you want to rewatch.</li>
+                    <li class="mb-2"><strong>Optimal Cross-Device Compatibility:</strong> 123movieshub is designed to work seamlessly across various devices. Whether you're watching on a desktop, laptop, tablet, or smartphone, our site will automatically adjust to provide the best display and functionality. Enjoy streaming anywhere, anytime, with consistent quality.</li>
+                    <li class="mb-2"><strong>Fast and Stable Streaming Without Buffering:</strong> We understand how frustrating buffering can be. Therefore, 123movieshub uses optimized servers to ensure fast and stable streaming. Enjoy your movies and TV series without interruptions, even during peak hours.</li>
+                    <li class="mb-2"><strong>Minimal Ad Viewing Experience:</strong> Although we provide a free service, we strive to keep ads as minimal and non-intrusive as possible. Our main focus is to ensure your viewing experience remains smooth and enjoyable, without unnecessary interruptions.</li>
+                    <li class="mb-2"><strong>Download Option for Offline Viewing:</strong> Want to watch when there's no internet connection? For some titles, 123movieshub provides a download option, allowing you to save your favorite movies or episodes directly to your device. This is perfect for long trips or when you want to save data quota.</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold text-gray-100 mb-4 mt-6">Exploring the Movie Collection on 123movieshub: A Cinematic World at Your Fingertips</h3>
+                <p class="mb-4">The movie collection on 123movieshub is one of the most comprehensive you'll find online. We are proud to offer a diverse range of genres and categories to suit every taste and mood:</p>
+                <ul class="list-disc list-inside mb-4 ml-4">
+                    <li class="mb-2"><strong>Action & Adventure Movies:</strong> Feel the adrenaline with explosive films, thrilling car chases, and epic battles. From superheroes saving the world to epic adventures in the wilderness, this genre will keep you glued to your seat.</li>
+                    <li class="mb-2"><strong>Comedy & Romance:</strong> Need a laugh or a heartwarming love story? Explore our comedy collection that will have you in stitches, or dive into romantic dramas that will touch your heart.</li>
+                    <li class="mb-2"><strong>Drama & Thriller:</strong> For fans of deep stories and adrenaline-pumping plots, our drama and thriller categories offer complex narratives, strong characters, and suspense that will keep you guessing until the end.</li>
+                    <li class="mb-2"><strong>Horror & Mystery:</strong> Prepare yourself for terrifying sensations and puzzling enigmas. Our horror collection will test your courage, while mystery films will challenge your deduction skills.</li>
+                    <li class="mb-2"><strong>Science Fiction & Fantasy:</strong> Imagine without limits with journeys to distant galaxies, astonishing future technologies, or worlds filled with magic and mythical creatures. This genre is the perfect escape from reality.</li>
+                    <li class="mb-2"><strong>Animated & Family Movies:</strong> Entertainment for all ages. From classic animations to the latest releases, we have the perfect movies for a fun family night.</li>
+                    <li class="mb-2"><strong>Documentary Films:</strong> Expand your knowledge and insights with our in-depth documentary collection, covering various topics from history, nature, to social issues.</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold text-gray-100 mb-4 mt-6">Diving into the World of TV Series on 123movieshub: Unlimited Binge-Watching</h3>
+                <p class="mb-4">Besides movies, 123movieshub is also a paradise for TV series fans. We offer thousands of episodes from various series, ensuring you can follow your favorite stories from beginning to end:</p>
+                <ul class="list-disc list-inside mb-4 ml-4">
+                    <li class="mb-2"><strong>Popular TV Series from Around the World:</strong> Watch award-winning drama series, hilarious comedies, profound sci-fi, epic fantasy, and gripping thrillers from various countries and TV networks.</li>
+                    <li class="mb-2"><strong>Latest Episodes Always Available:</strong> We understand your desire to stay up-to-date. That's why we ensure the latest episodes of your favorite series are available as soon as they are released.</li>
+                    <li class="mb-2"><strong>Binge-Watching Friendly:</strong> With access to entire seasons, you can binge-watch your favorite series non-stop, whenever you want. No need to wait for the next episode!</li>
+                    <li class="mb-2"><strong>Various Networks & Platforms:</strong> From series produced by major studios to hidden gems from other streaming platforms, 123movieshub gathers them all in one convenient place.</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold text-gray-100 mb-4 mt-6">SEO Optimization and User Experience on 123movieshub</h3>
+                <p class="mb-4">We don't just focus on content; we also invest in ensuring that 123movieshub is easy to find and enjoyable to use. Search engine optimization (SEO) is an integral part of our strategy to bring high-quality free entertainment to more people. We strategically use relevant keywords throughout the site, such as "watch free movies," "HD TV series streaming," "download movies," "latest movies," "online watch site," and "full HD," to ensure that when you search for online entertainment, 123movieshub is one of the top results.</p>
+                <p class="mb-4">Our clean URL structure and accurate meta descriptions help search engines better understand our site's content. Additionally, we continuously monitor and improve site speed and mobile responsiveness to ensure that the user experience remains optimal across all devices. Whether you're accessing from a desktop at home or a smartphone on the go, 123movieshub will deliver fast and smooth performance. We believe that a fast and easy-to-navigate site is key to a superior streaming experience.</p>
+
+                <h3 class="text-2xl font-bold text-gray-100 mb-4 mt-6">Start Your Entertainment Adventure Now!</h3>
+                <p class="mb-4">With an unparalleled collection of movies and TV series, stunning HD quality, and a commitment to providing free entertainment without registration, 123movieshub is the clear choice for all your streaming needs. We are dedicated to continuously updating and improving our platform, ensuring you always have access to the best content in the most convenient way.</p>
+                <p class="mb-4">Don't waste any more time searching elsewhere. Join millions of users who have found the joy of free streaming on 123movieshub. Whether you want to watch the latest blockbuster, discover a new favorite TV series, or simply relax with an timeless classic, 123movieshub is ready to fulfill all your entertainment desires. Visit our site now, choose the movie or TV series you want, and enjoy unlimited entertainment at your fingertips. Happy watching!</p>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -557,8 +623,10 @@
         const layer1 = document.getElementById('layer-1');
         const layer2 = document.getElementById('layer-2');
         const layer3 = document.getElementById('layer-3');
+        const layer4 = document.getElementById('layer-4'); // Added layer4
         const backToListButton = document.getElementById('back-to-list-button');
         const backToDetailButton = document.getElementById('back-to-detail-button');
+        const backFromHomeButton = document.getElementById('back-from-home-button'); // Added backFromHomeButton
         const stream1Button = document.getElementById('stream-1-button');
         const stream2Button = document.getElementById('stream-2-button'); 
         const stream3Button = document.getElementById('stream-3-button');
@@ -580,6 +648,7 @@
         const whyWatchText = document.getElementById('why-watch-text');
         const whyWatchSpinner = document.getElementById('why-watch-spinner');
 
+        const navHomeButton = document.getElementById('nav-home-button'); // Added navHomeButton
         const navMoviesButton = document.getElementById('nav-movies-button');
         const navTvSeriesButton = document.getElementById('nav-tvseries-button');
         const languageSelector = document.getElementById('language-selector');
@@ -611,6 +680,7 @@
                 metaDescription: "123movieshub – Transmita y descargue las últimas películas y series de TV en HD de forma gratuita. ¡Disfrute de entretenimiento ilimitado sin registrarse. ¡Mire ahora en 123movieshub!",
                 metaKeywords: "123movieshub, películas gratis en línea, transmisión HD, ver series de TV, últimas películas, descargar películas, sin registro, entretenimiento gratis, sitio de películas en línea, películas, series de TV, streaming, HD completo",
                 ogDescription: "123movieshub – Transmita y descargue las últimas películas y series de TV en HD de forma gratuita. ¡Disfrute de entretenimiento ilimitado sin registrarse. ¡Mire ahora en 123movieshub!",
+                homeButton: "Inicio", // New translation
                 moviesButton: "Películas",
                 tvSeriesButton: "Series de TV",
                 searchMoviesPlaceholder: "Buscar películas...",
@@ -652,6 +722,7 @@
                 akaPrefix: "También Conocido Como: ", // New translation
                 ageRatingPrefix: "Clasificación por Edad: ", // New translation
                 directorPrefix: "Director: ", // New translation
+                homePageTitle: "¡Bienvenido a 123movieshub!", // New translation
                 genres: {
                     "Action": "Acción",
                     "Adventure": "Aventura",
@@ -671,6 +742,7 @@
                 metaDescription: "123movieshub – Stream and download the latest movies & TV series in HD for free! Enjoy unlimited entertainment without registration. Watch now at 123movieshub!",
                 metaKeywords: "123movieshub, free movies online, HD streaming, watch TV series, latest movies, download movies, no sign-up, free entertainment, online movie site, movies, TV series, streaming, full HD",
                 ogDescription: "123movieshub – Stream and download the latest movies & TV series in HD for free! Enjoy unlimited entertainment without registration. Watch now at 123movieshub!",
+                homeButton: "Home", // New translation
                 moviesButton: "Movies",
                 tvSeriesButton: "TV Series",
                 searchMoviesPlaceholder: "Search movies...",
@@ -712,6 +784,7 @@
                 akaPrefix: "Also Known As: ", // New translation
                 ageRatingPrefix: "Age Rating: ", // New translation
                 directorPrefix: "Director: ", // New translation
+                homePageTitle: "Welcome to 123movieshub!", // New translation
                 genres: {
                     "Action": "Action",
                     "Adventure": "Adventure",
@@ -731,6 +804,7 @@
                 metaDescription: "123movieshub – Streaming dan unduh film & serial TV terbaru dalam HD gratis! Nikmati hiburan tanpa batas tanpa perlu mendaftar. Tonton sekarang di 123movieshub!",
                 metaKeywords: "123movieshub, film gratis online, streaming HD, nonton serial TV, film terbaru, unduh film, tanpa daftar, hiburan gratis, situs film online, film, serial TV, streaming, full HD",
                 ogDescription: "123movieshub – Streaming dan unduh film & serial TV terbaru dalam HD gratis! Nikmati hiburan tanpa batas tanpa perlu mendaftar. Tonton sekarang di 123movieshub!",
+                homeButton: "Beranda", // New translation
                 moviesButton: "Film",
                 tvSeriesButton: "Serial TV",
                 searchMoviesPlaceholder: "Cari film...",
@@ -772,6 +846,7 @@
                 akaPrefix: "Juga Dikenal Sebagai: ", // New translation
                 ageRatingPrefix: "Usia Penonton: ", // New translation
                 directorPrefix: "Sutradara: ", // New translation
+                homePageTitle: "Selamat Datang di 123movieshub!", // New translation
                 genres: {
                     "Action": "Aksi",
                     "Adventure": "Petualangan",
@@ -833,6 +908,7 @@
             layer1.style.display = 'none';
             layer2.style.display = 'none';
             layer3.style.display = 'none';
+            layer4.style.display = 'none'; // Hide layer4
             layerToShow.style.display = 'block';
             window.scrollTo(0, 0); // Scroll to top when changing layers
         }
@@ -1233,7 +1309,13 @@
                         window.location.hash = ''; // Clear hash
                     }
                 }
-            } else {
+            } else if (hash === '#/home') { // Handle direct link to home page
+                showLayer(layer4);
+                document.querySelectorAll('.genre-button').forEach(button => {
+                    button.style.display = 'none';
+                });
+            }
+            else {
                 // If no specific hash, or unrecognized hash, show popular movies
                 fetchAndDisplayMedia('movie');
                 showLayer(layer1);
@@ -1272,6 +1354,19 @@
             document.getElementById('streaming-player').src = '';
             document.getElementById('streaming-player-container').classList.add('hidden');
             // No need to change hash here, as we are navigating within the detail view context
+        });
+
+        backFromHomeButton.addEventListener('click', () => { // Added event listener for backFromHomeButton
+            showLayer(layer1);
+            window.location.hash = ''; // Clear hash when going back from home
+            // Restore visibility of genre buttons based on currentMediaType
+            document.querySelectorAll('.genre-button').forEach(button => {
+                if (button.dataset.mediaType === currentMediaType) {
+                    button.style.display = 'inline-block';
+                } else {
+                    button.style.display = 'none';
+                }
+            });
         });
 
         /**
@@ -1517,6 +1612,16 @@
             fetchAndDisplayMedia('tv', 1); // Load popular TV series
             showLayer(layer1);
             window.location.hash = ''; // Clear hash when going back to TV series home
+        });
+
+        // New event listener for the Home button
+        navHomeButton.addEventListener('click', () => {
+            showLayer(layer4); // Show layer 4
+            window.location.hash = '#/home'; // Set hash for home page
+            // Hide genre buttons when viewing home page
+            document.querySelectorAll('.genre-button').forEach(button => {
+                button.style.display = 'none';
+            });
         });
 
         // Event listener for static movie cards in Layer 3 (UPDATED)
