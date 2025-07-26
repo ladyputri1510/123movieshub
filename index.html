@@ -679,7 +679,7 @@
         // Renamed staticMovieGrid to topRatedMovieGridLayer2
         const topRatedMovieGridLayer2 = document.getElementById('top-rated-movie-grid-layer2'); 
         // New static movie grid for Layer 3 (retains original name)
-        const staticMovieGridLayer3 = document.getElementById('static-movie-grid-layer3');
+        const staticMovieGridLayer3 = document.getElementById('static-movie-card-grid-layer3'); // Corrected ID
         // New static movie grid for Layer 4
         // const homeStaticMovieGrid = document.getElementById('home-static-movie-grid'); // REMOVED
 
@@ -1251,22 +1251,24 @@
                     console.log('No "Trailer" found, falling back to any YouTube video:', trailer);
                 }
 
-                // Using Rickroll as fallback if no trailer is found
-                const trailerUrl = trailer ? `https://www.youtube.com/embed/${trailer.key}` : 'https://www.youtube.com/embed/dQw4w9WgXcQ';
+                // MODIFIED: Using Big Buck Bunny trailer as the new fallback
+                const trailerUrl = trailer ? `https://www.youtube.com/embed/${trailer.key}` : 'https://www.youtube.com/embed/YE7VzlLtp-4';
                 console.log('Final trailer URL:', trailerUrl); // Log final trailer URL
 
                 // Fetch media credits (for cast and director)
                 const creditsResponse = await fetch(`${TMDB_BASE_URL}${mediaTypeEndpoints[mediaType].credits}${mediaId}/credits?api_key=${TMDB_API_KEY}&language=${currentLangCode}`);
                 if (!creditsResponse.ok) throw new Error(`HTTP error! status: ${creditsResponse.status}`);
                 const creditsData = await creditsResponse.json();
-                const cast = creditsData.cast.slice(0, 5).map(person => person.name).join(', '); // Top 5 cast members
+                // MODIFIED: Safely access cast and use currentLang.notAvailable if undefined
+                const cast = creditsData.cast?.slice(0, 5).map(person => person.name).join(', ') || currentLang.notAvailable;
                 const director = creditsData.crew.find(person => person.job === 'Director')?.name || currentLang.notAvailable;
 
                 // Fetch alternative titles
                 const alternativeTitlesResponse = await fetch(`${TMDB_BASE_URL}${mediaTypeEndpoints[mediaType].alternativeTitles}${mediaId}/alternative_titles?api_key=${TMDB_API_KEY}`);
                 if (!alternativeTitlesResponse.ok) console.warn(`Failed to fetch alternative titles for ${mediaType} ${mediaId}`);
                 const alternativeTitlesData = alternativeTitlesResponse.ok ? await alternativeTitlesResponse.json() : { titles: [] };
-                const alternativeTitles = alternativeTitlesData.titles.slice(0, 3).map(t => t.title).join(', ') || currentLang.notAvailable;
+                // MODIFIED: Safely access titles and use currentLang.notAvailable if undefined
+                const alternativeTitles = alternativeTitlesData.titles?.slice(0, 3).map(t => t.title).join(', ') || currentLang.notAvailable;
 
                 // Fetch release dates/content ratings for age certification
                 let ageRating = currentLang.notAvailable;
